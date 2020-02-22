@@ -264,3 +264,6 @@ C:\Users\arobas\source\repos\Ski-DooMan\Ski-DooMan\Ski-DooMan.App\obj\Debug\90\s
 C:\Users\arobas\source\repos\Ski-DooMan\Ski-DooMan\Ski-DooMan.App\obj\Debug\90\stamp\_GenerateJavaStubs.stamp
 C:\Users\arobas\source\repos\Ski-DooMan\Ski-DooMan\Ski-DooMan.App\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\arobas\source\repos\Ski-DooMan\Ski-DooMan\Ski-DooMan.App\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\arobas\source\repos\Ski-DooMan\Ski-DooMan\Ski-DooMan.App\obj\Debug\90\res\layout\radio.xml
+C:\Users\arobas\source\repos\Ski-DooMan\Ski-DooMan\Ski-DooMan.App\obj\Debug\90\android\src\crc64d401ac7330fc9f59\Radio.java
+C:\Users\arobas\source\repos\Ski-DooMan\Ski-DooMan\Ski-DooMan.App\obj\Debug\90\stamp\SetupDependenciesForDesigner.stamp

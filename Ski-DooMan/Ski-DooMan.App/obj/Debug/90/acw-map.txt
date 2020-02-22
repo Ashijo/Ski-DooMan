@@ -4,6 +4,9 @@ ski_dooman.app.MainActivity;crc64d74d6d849607a470.MainActivity
 Ski_DooMan.App.Activities.Map, Ski-DooMan.App;crc64d401ac7330fc9f59.Map
 Ski_DooMan.App.Activities.Map;crc64d401ac7330fc9f59.Map
 ski_dooman.app.activities.Map;crc64d401ac7330fc9f59.Map
+Ski_DooMan.App.Activities.Radio, Ski-DooMan.App;crc64d401ac7330fc9f59.Radio
+Ski_DooMan.App.Activities.Radio;crc64d401ac7330fc9f59.Radio
+ski_dooman.app.activities.Radio;crc64d401ac7330fc9f59.Radio
 Ski_DooMan.App.Activities.StartSettings, Ski-DooMan.App;crc64d401ac7330fc9f59.StartSettings
 Ski_DooMan.App.Activities.StartSettings;crc64d401ac7330fc9f59.StartSettings
 ski_dooman.app.activities.StartSettings;crc64d401ac7330fc9f59.StartSettings

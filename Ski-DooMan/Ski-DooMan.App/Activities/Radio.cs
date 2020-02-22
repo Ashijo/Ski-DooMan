@@ -9,6 +9,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Ski_DooMan.App.Manager;
 
 namespace Ski_DooMan.App.Activities
 {
@@ -18,7 +19,9 @@ namespace Ski_DooMan.App.Activities
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+            SetContentView(Resource.Layout.Radio);
 
+            RadioManager.Instance.StartPlayer("placeholder.mp3");
             // Create your application here
         }
     }

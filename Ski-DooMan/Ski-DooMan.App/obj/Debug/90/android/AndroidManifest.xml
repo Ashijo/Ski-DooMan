@@ -12,6 +12,7 @@
       </intent-filter>
     </activity>
     <activity android:label="Map" android:name="crc64d401ac7330fc9f59.Map" />
+    <activity android:label="Radio" android:name="crc64d401ac7330fc9f59.Radio" />
     <activity android:label="StartSettings" android:name="crc64d401ac7330fc9f59.StartSettings" />
     <service android:name="crc64a98abb514ffad9f1.KeepAliveService" />
     <receiver android:enabled="true" android:exported="false" android:label="Essentials Battery Broadcast Receiver" android:name="crc64a0e0a82d0db9a07d.BatteryBroadcastReceiver" />

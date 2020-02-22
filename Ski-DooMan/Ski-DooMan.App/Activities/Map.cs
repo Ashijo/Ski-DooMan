@@ -35,6 +35,12 @@ namespace Ski_DooMan.App.Activities
             Button Node7Btn = this.FindViewById<Button>(Resource.Id.node7);
 
             Button ResetSequenceBtn = this.FindViewById<Button>(Resource.Id.resetSequence);
+            Button travelBtn = this.FindViewById<Button>(Resource.Id.travel);
+
+            travelBtn.Click += delegate
+            {
+                Travel();
+            };
 
             ResetSequenceBtn.Click += delegate
             {
@@ -96,7 +102,7 @@ namespace Ski_DooMan.App.Activities
             if (journey.Last().isPlace)
             {
                 MapManager.Instance.characterPosition = journey.Last();
-                //on y go
+                StartActivity(typeof(Radio));
             };
         }
 
