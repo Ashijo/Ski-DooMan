@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ski-DooMan.App", "Ski-DooMan.App\Ski-DooMan.App.csproj", "{7B68A88F-0E1D-44FA-97FC-D84EE1D908A6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7B68A88F-0E1D-44FA-97FC-D84EE1D908A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B68A88F-0E1D-44FA-97FC-D84EE1D908A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B68A88F-0E1D-44FA-97FC-D84EE1D908A6}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{7B68A88F-0E1D-44FA-97FC-D84EE1D908A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B68A88F-0E1D-44FA-97FC-D84EE1D908A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B68A88F-0E1D-44FA-97FC-D84EE1D908A6}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1F2B5C37-D455-46C0-B8C9-D1B50293595F}
+	EndGlobalSection
+EndGlobal
