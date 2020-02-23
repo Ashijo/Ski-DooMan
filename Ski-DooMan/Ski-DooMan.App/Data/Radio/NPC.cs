@@ -20,12 +20,22 @@ namespace Ski_DooMan.App.Data.Radio
             {
                 { "mona", "fo sauver tonton a {0} " },
                 { "mona-deliver", "fo mener Gilber de {0} a {1} " },
-                { "mona", "fo sauver tonton a {0} " },
-                { "mona-deliver", "fo mener Gilber de {0} a {1} " },
-                { "mona", "fo sauver tonton a {0} " },
-                { "mona-deliver", "fo mener Gilber de {0} a {1} " },
-                { "mona", "fo sauver tonton a {0} " },
-                { "mona-deliver", "fo mener Gilber de {0} a {1} " }
+
+                { "herve", "fo sauver tonton a {0} " },
+                { "herve-deliver", "fo mener Gilber de {0} a {1} " },
+
+                { "joanne", "fo sauver tonton a {0} " },
+                { "joanne-deliver", "fo mener Gilber de {0} a {1} " },
+
+                { "bertha", "fo sauver tonton a {0} " },
+                { "bertha-deliver", "fo mener Gilber de {0} a {1} " },
+
+                { "leo", "fo sauver tonton a {0} " },
+                { "leo-deliver", "fo mener Gilber de {0} a {1} " },
+
+                { "helene", "fo sauver tonton a {0} " },
+                { "helene-deliver", "fo mener Gilber de {0} a {1} " }
+
             };
         }
     }

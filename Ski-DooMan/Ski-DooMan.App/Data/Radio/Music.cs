@@ -18,10 +18,8 @@ namespace Ski_DooMan.App.Data.Radio
         {
             return new List<string>()
             {
-                "Bohemian Rhapsody de Queen",
-                "Bohemian Rhapsody de Queen",
-                "Bohemian Rhapsody de Queen",
-                "Bohemian Rhapsody de Queen"
+                "Pour que tu m’aimes encore de Céline Dion ",
+                "L’homme 7 UP des Respectables "
             };
 
         }
@@ -30,10 +28,8 @@ namespace Ski_DooMan.App.Data.Radio
         {
             return new List<string>()
             {
-                "Bohemian Rhapsody de Queen",
-                "Bohemian Rhapsody de Queen",
-                "Bohemian Rhapsody de Queen",
-                "Bohemian Rhapsody de Queen"
+                "Aux portes du matin de Richard Séguin ",
+                "Maudit bonheur de Michel Rivard "
             };
 
         }
@@ -42,10 +38,8 @@ namespace Ski_DooMan.App.Data.Radio
         {
             return new List<string>()
             {
-                "Bohemian Rhapsody de Queen",
-                "Bohemian Rhapsody de Queen",
-                "Bohemian Rhapsody de Queen",
-                "Bohemian Rhapsody de Queen"
+                "En 1990 de Jean Leloup",
+                "Alegria du Cirque du Soleil "
             };
 
         }
@@ -54,10 +48,8 @@ namespace Ski_DooMan.App.Data.Radio
         {
             return new List<string>()
             {
-                "Bohemian Rhapsody de Queen",
-                "Bohemian Rhapsody de Queen",
-                "Bohemian Rhapsody de Queen",
-                "Bohemian Rhapsody de Queen"
+                "Le plus fort, c’est mon père de Lynda Lemay",
+                "Seigneur de Kevin Parent"
             };
 
         }
@@ -66,10 +58,8 @@ namespace Ski_DooMan.App.Data.Radio
         {
             return new List<string>()
             {
-                "Bohemian Rhapsody de Queen",
-                "Bohemian Rhapsody de Queen",
-                "Bohemian Rhapsody de Queen",
-                "Bohemian Rhapsody de Queen"
+                "Calvaire de La chicane",
+                "Sèche tes pleurs de Daniel Bélanger "
             };
 
         }
@@ -78,10 +68,8 @@ namespace Ski_DooMan.App.Data.Radio
         {
             return new List<string>()
             {
-                "Bohemian Rhapsody de Queen",
-                "Bohemian Rhapsody de Queen",
-                "Bohemian Rhapsody de Queen",
-                "Bohemian Rhapsody de Queen"
+                "Tous les cris, les SOS de Marie-Denise Pelletier ",
+                "La rue Principale des Colocs "
             };
 
         }
