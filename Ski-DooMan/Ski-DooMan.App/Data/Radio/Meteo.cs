@@ -18,9 +18,9 @@ namespace Ski_DooMan.App.Data.Radio
         {
             return new List<string>()
             {
-                "ya un problem a {0}",
-                "y fait bo {0}",
-                "esti ksa gliss {0}"
+                "Attention! la {0} n'a pas été déblayé",
+                "Attention! il y a un accident sur la {0}",
+                "Attention! il y a de grande bourasque de vent sur la {0}"
             };
         }
 
