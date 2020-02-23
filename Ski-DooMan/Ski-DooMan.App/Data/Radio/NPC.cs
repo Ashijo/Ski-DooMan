@@ -18,8 +18,14 @@ namespace Ski_DooMan.App.Data.Radio
         {
             return new Dictionary<string, string>
             {
-                { "quest1", "fo sauver tonton a {0} " },
-                { "quest2-deliver", "fo mener Gilber de {0} a {1} " }
+                { "mona", "fo sauver tonton a {0} " },
+                { "mona-deliver", "fo mener Gilber de {0} a {1} " },
+                { "mona", "fo sauver tonton a {0} " },
+                { "mona-deliver", "fo mener Gilber de {0} a {1} " },
+                { "mona", "fo sauver tonton a {0} " },
+                { "mona-deliver", "fo mener Gilber de {0} a {1} " },
+                { "mona", "fo sauver tonton a {0} " },
+                { "mona-deliver", "fo mener Gilber de {0} a {1} " }
             };
         }
     }

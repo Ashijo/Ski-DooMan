@@ -18,10 +18,14 @@ namespace Ski_DooMan.App.Data.Radio
         {
             return new List<string>()
             {
-                "tout est clean",
-                "y fait bo",
-                "esti ksa gliss"
+                "ya un problem a {0}",
+                "y fait bo {0}",
+                "esti ksa gliss {0}"
             };
         }
+
+
+
+
     }
 }
