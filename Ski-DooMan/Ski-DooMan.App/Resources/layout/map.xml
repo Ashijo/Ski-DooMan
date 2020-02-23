@@ -9,6 +9,7 @@
         android:layout_width="400dp"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:background="@drawable/map"
         >
         <LinearLayout
             android:layout_width="wrap_content"
@@ -20,19 +21,19 @@
                 android:layout_width="133dp"
                 android:layout_height="match_parent"
                 android:id="@+id/ville1"
-                android:background="@android:color/holo_red_dark"
+                android:background="@android:color/transparent"
         />
             <Button
                 android:layout_width="133dp"
                 android:layout_height="match_parent"
                 android:id="@+id/node5"
-                android:background="@android:color/holo_green_dark"   
+                android:background="@android:color/transparent"   
             />
             <Button
                 android:layout_width="133dp"
                 android:layout_height="match_parent"
                 android:id="@+id/ville2"
-                android:background="@android:color/holo_red_dark"   
+                android:background="@android:color/transparent"   
             />
 
 
@@ -45,18 +46,20 @@
         >
             <Button
                 android:layout_width="133dp"
+                android:background="@android:color/transparent"
+                
                 android:layout_height="match_parent"/>
             <Button
                 android:layout_width="133dp"
                 android:layout_height="match_parent"
                 android:id="@+id/node6"
-                android:background="@android:color/holo_green_dark"
+                android:background="@android:color/transparent"
             />
             <Button
                 android:layout_width="133dp"
                 android:layout_height="match_parent"
                 android:id="@+id/node7"
-                android:background="@android:color/holo_green_dark"
+                android:background="@android:color/transparent"
             />
 
 
@@ -71,17 +74,19 @@
                 android:layout_width="133dp"
                 android:layout_height="match_parent"
                 android:id="@+id/ville3"
-                android:background="@android:color/holo_red_dark"
+                android:background="@android:color/transparent"
             />
             <Button
                 android:layout_width="133dp"
                 android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                
         />
             <Button
                 android:layout_width="133dp"
                 android:layout_height="match_parent"
                 android:id="@+id/ville4"
-                android:background="@android:color/holo_red_dark"
+                android:background="@android:color/transparent"
             />
 
 

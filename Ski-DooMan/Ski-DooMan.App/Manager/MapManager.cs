@@ -24,6 +24,8 @@ namespace Ski_DooMan.App.Manager
         public int[] trapperdRoads;
         public List<Road> selectedRoads;
 
+
+
         #region instance
         private static MapManager instance = null;
 

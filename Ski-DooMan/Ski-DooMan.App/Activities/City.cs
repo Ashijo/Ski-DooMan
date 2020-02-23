@@ -33,6 +33,9 @@ namespace Ski_DooMan.App.Activities
             img = this.FindViewById<ImageView>(Resource.Id.img);
             msg = this.FindViewById<TextView>(Resource.Id.msg);
 
+            bool badTravel = MapManager.Instance.IsJourneySafe();
+            MapManager.Instance.ResetTravelSelect();
+
             explore.Click += delegate
             {
                 Explore();
@@ -62,6 +65,10 @@ namespace Ski_DooMan.App.Activities
                 GoRadio();
             };
 
+            if (badTravel)
+            {
+                BadTravel();
+            }
         }
 
         void GoRadio()
@@ -82,6 +89,13 @@ namespace Ski_DooMan.App.Activities
         void EndTurn()
         {
 
+        }
+
+        void BadTravel()
+        {
+            img.Visibility = ViewStates.Gone;
+            msg.Visibility = ViewStates.Visible;
+            msg.Text = "On a eu un probleme sur la route";
         }
 
         void Explore()

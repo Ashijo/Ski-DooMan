@@ -142,7 +142,7 @@ namespace Ski_DooMan.App.Activities
             }
 
             journeyTextView.Text = journeyMsg;
-            if(journey.Any())
+            if (journey.Any())
                 validSelection = MapManager.Instance.GetValideMoveNodes(journey.Last());
         }
 
@@ -161,11 +161,30 @@ namespace Ski_DooMan.App.Activities
             }
         }
 
+        void AddTravel()
+        {
+            if (journey.Count != 0)
+            {
+                if (journey.Count == 1)
+                {
+                    MapManager.Instance.AddTravelPart(MapManager.Instance.characterPosition.id, journey[0].id);
+
+                }
+
+                else
+                {
+                    MapManager.Instance.AddTravelPart(journey[journey.Count - 2].id, journey[journey.Count - 1].id);
+                }
+
+            }
+        }
+
         public void CityBClick()
         {
             if (validSelection.Any(node => node.id == 2))
             {
                 journey.Add(validSelection.Find(node => node.id == 2));
+                AddTravel();
             }
         }
 
@@ -174,6 +193,7 @@ namespace Ski_DooMan.App.Activities
             if (validSelection.Any(node => node.id == 3))
             {
                 journey.Add(validSelection.Find(node => node.id == 3));
+                AddTravel();
             }
         }
 
@@ -182,6 +202,7 @@ namespace Ski_DooMan.App.Activities
             if (validSelection.Any(node => node.id == 4))
             {
                 journey.Add(validSelection.Find(node => node.id == 4));
+                AddTravel();
             }
         }
 
@@ -190,6 +211,7 @@ namespace Ski_DooMan.App.Activities
             if (validSelection.Any(node => node.id == 5))
             {
                 journey.Add(validSelection.Find(node => node.id == 5));
+                AddTravel();
             }
         }
 
@@ -198,6 +220,7 @@ namespace Ski_DooMan.App.Activities
             if (validSelection.Any(node => node.id == 6))
             {
                 journey.Add(validSelection.Find(node => node.id == 6));
+                AddTravel();
             }
         }
 
@@ -206,6 +229,7 @@ namespace Ski_DooMan.App.Activities
             if (validSelection.Any(node => node.id == 7))
             {
                 journey.Add(validSelection.Find(node => node.id == 7));
+                AddTravel();
             }
         }
 
