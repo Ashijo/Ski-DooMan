@@ -25,7 +25,6 @@ namespace Ski_DooMan.App.Manager
         {
             npcs = Seeder.GetNpcs();
             usedNpc = new List<Npc>();
-
         }
 
         public static GameManager Instance

@@ -24,6 +24,28 @@
             android:layout_margin="40dp"
             android:padding="10dp"
             >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioAnswer"
+                android:visibility="gone"
+            />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/dangerMsg"
+                android:visibility="gone"
+                
+            />
+             <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="On est arriver"
+                android:id="@+id/finish"
+                android:visibility="gone"
+            />
+
 
             <Button
                 android:layout_width="match_parent"

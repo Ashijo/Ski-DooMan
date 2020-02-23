@@ -134,6 +134,30 @@ namespace Ski_DooMan.App.Manager
             return nodes.Find(node => node.id == id) as Place;
         }
 
+        public Place GetAPertinentPlace(int? idUnallowedPlaced = null)
+        {
+            Random rand = new Random();
+            var logicPlace = nodes.Where(node => node.isPlace && node.id != characterPosition.id).Cast<Place>().ToList();
+
+            if (idUnallowedPlaced != null)
+            {
+                logicPlace = logicPlace.Where(place => place.id != (int)idUnallowedPlaced).ToList(); ;
+            }
+
+            return logicPlace[rand.Next(logicPlace.Count)];
+
+        }
+
+        public bool IsJourneySafe()
+        {
+            return !selectedRoads.Any(road=> road.roadEvent == RoadEvent.Something);
+        }
+
+        public void SetNpc(Npc npc, Place place)
+        {
+            (nodes.Find(node => node.id == place.id) as Place).SetNpc(npc);
+        }
+
         public int[] GetQuestPlaceIds()
         {
             return nodes

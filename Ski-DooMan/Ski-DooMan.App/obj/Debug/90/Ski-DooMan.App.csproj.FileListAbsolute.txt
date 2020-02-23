@@ -278,3 +278,4 @@ C:\Users\arobas\source\repos\Ski-DooMan\Ski-DooMan\Ski-DooMan.App\obj\Debug\90\s
 C:\Users\arobas\source\repos\Ski-DooMan\Ski-DooMan\Ski-DooMan.App\obj\Debug\90\stamp\_GenerateJavaStubs.stamp
 C:\Users\arobas\source\repos\Ski-DooMan\Ski-DooMan\Ski-DooMan.App\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\arobas\source\repos\Ski-DooMan\Ski-DooMan\Ski-DooMan.App\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\arobas\source\repos\Ski-DooMan\Ski-DooMan\Ski-DooMan.App\obj\Debug\90\Ski-DooMan.App.csprojAssemblyReference.cache
