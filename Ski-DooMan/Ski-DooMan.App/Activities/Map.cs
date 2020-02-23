@@ -142,7 +142,8 @@ namespace Ski_DooMan.App.Activities
             }
 
             journeyTextView.Text = journeyMsg;
-            validSelection = MapManager.Instance.GetValideMoveNodes(journey.Last());
+            if(journey.Any())
+                validSelection = MapManager.Instance.GetValideMoveNodes(journey.Last());
         }
 
         public void ResetSequence()

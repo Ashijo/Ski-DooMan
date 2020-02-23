@@ -35,7 +35,7 @@ namespace Ski_DooMan.App.Activities
 
             character.Click += delegate
             {
-                if (((Place)MapManager.Instance.characterPosition).hasAQuest)
+                if (((Place)MapManager.Instance.characterPosition).hasAQuest && !((Place)MapManager.Instance.characterPosition).npc.definedQuest.questType)
                 {
                     GoDialog();
                 }
