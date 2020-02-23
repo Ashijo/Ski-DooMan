@@ -3323,11 +3323,11 @@ namespace Ski_DooMan.App
 			// aapt resource value: 0x7F09001F
 			public const int always = 2131296287;
 			
-			// aapt resource value: 0x7F090001
-			public const int APPLICATION_NAME = 2131296257;
-			
 			// aapt resource value: 0x7F090020
 			public const int application_name = 2131296288;
+			
+			// aapt resource value: 0x7F090001
+			public const int APPLICATION_NAME = 2131296257;
 			
 			// aapt resource value: 0x7F090021
 			public const int async = 2131296289;

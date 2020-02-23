@@ -25,7 +25,7 @@ namespace Ski_DooMan.App.Entities.MapEnt
 
         public void SetNpc(Npc newOne)
         {
-            hasAQuest = false;
+            hasAQuest = true;
             npc = newOne;
         }
 

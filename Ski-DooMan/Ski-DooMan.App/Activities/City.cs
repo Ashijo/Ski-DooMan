@@ -41,6 +41,7 @@ namespace Ski_DooMan.App.Activities
                 }
             };
 
+
             map.Click += delegate
             {
                 GoMap();

@@ -113,6 +113,7 @@ namespace Ski_DooMan.App.Activities
         {
             if (journey.Any())
             {
+                MapManager.Instance.characterPosition = journey.Last();
                 StartActivity(typeof(City));
             }
         }
