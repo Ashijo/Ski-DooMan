@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:src="@drawable/green" 
+    />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+    >
+        <Button
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:text="m'en va a la taverne"
+            android:id="@+id/tavern"
+    />
+        <Button
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:text="On fouine"
+            android:id="@+id/explore"
+    />
+        <Button
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:text="ya koe a la radio ?"
+            android:id="@+id/radio"
+    />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+    >
+        <Button
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:text="faut k'jcause a l'esti d'tata"
+            android:id="@+id/character"
+    />
+
+        <Button
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:text="J'criss mon camp d'icite"
+            android:id="@+id/map"
+    />
+        <Button
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:text="chuis tané la"
+            android:id="@+id/end"
+    />
+    </LinearLayout>
+
+</LinearLayout>

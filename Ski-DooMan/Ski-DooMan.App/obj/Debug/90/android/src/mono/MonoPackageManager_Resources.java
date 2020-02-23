@@ -3,6 +3,8 @@ public class MonoPackageManager_Resources {
 	public static String[] Assemblies = new String[]{
 		/* We need to ensure that "Ski-DooMan.App.dll" comes first in this list. */
 		"Ski-DooMan.App.dll",
+		"Plugin.SimpleAudioPlayer.Abstractions.dll",
+		"Plugin.SimpleAudioPlayer.dll",
 		"Xamarin.Android.Arch.Core.Common.dll",
 		"Xamarin.Android.Arch.Core.Runtime.dll",
 		"Xamarin.Android.Arch.Lifecycle.Common.dll",

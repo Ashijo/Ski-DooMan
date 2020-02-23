@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 
 using Android.App;
@@ -10,12 +12,17 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Plugin.SimpleAudioPlayer;
 
 namespace Ski_DooMan.App.Manager
 {
     public class RadioManager
     {
         protected MediaPlayer player;
+
+        string[] tunes = new string[] { 
+            "Bohemian Rhapsody de Queen"
+            };
 
         #region instance
         private static RadioManager instance = null;
@@ -34,23 +41,10 @@ namespace Ski_DooMan.App.Manager
                 return instance;
             }
         }
+
         #endregion
 
-        public void StartPlayer(string fileName)
-        {
-            if (player == null)
-            {
-                player = new MediaPlayer();
-            }
-            else
-            {
-                player.Reset();
-            }
-
-
-            //player.SetDataSource("android.resource://Ski-DooMan.App/Raw/Audio/placeholder.mp3",
-            player.Prepare();
-            player.Start();
-        }
+     
     }
+   
 }

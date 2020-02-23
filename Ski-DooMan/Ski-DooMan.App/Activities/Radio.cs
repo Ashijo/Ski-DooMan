@@ -21,7 +21,7 @@ namespace Ski_DooMan.App.Activities
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.Radio);
 
-            RadioManager.Instance.StartPlayer("placeholder.mp3");
+            //RadioManager.Instance.StartPlayer("placeholder.mp3");
             // Create your application here
         }
     }
