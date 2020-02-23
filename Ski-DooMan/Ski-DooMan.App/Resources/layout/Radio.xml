@@ -41,7 +41,7 @@
              <Button
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:text="On est arriver"
+                android:text="On est arrivé !"
                 android:id="@+id/finish"
                 android:visibility="gone"
             />
@@ -57,7 +57,7 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:text="99.7 Radio AM NPC"
+                android:text="99.7 Radio Village"
                 android:id="@+id/npc"
             />
             <Button

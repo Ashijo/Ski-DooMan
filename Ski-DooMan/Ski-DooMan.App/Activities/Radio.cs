@@ -102,7 +102,7 @@ namespace Ski_DooMan.App.Activities
         {
             if (!MapManager.Instance.IsJourneySafe())
             {
-                alert = "Chuis fucker l'gros";
+                alert = "On a eu un probleme sur la route";
             }
         }
 

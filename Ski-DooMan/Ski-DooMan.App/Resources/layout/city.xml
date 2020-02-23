@@ -34,7 +34,7 @@
         <Button
             android:layout_width="280dp"
             android:layout_height="match_parent"
-            android:text="On fouine"
+            android:text="fouiller"
             android:id="@+id/explore"
     />
         <Button
@@ -54,7 +54,7 @@
         <Button
             android:layout_width="280dp"
             android:layout_height="match_parent"
-            android:text="faut k'jcause a l'esti d'tata"
+            android:text="Jaser"
             android:id="@+id/character"
     />
 
@@ -67,7 +67,7 @@
         <Button
             android:layout_width="280dp"
             android:layout_height="match_parent"
-            android:text="chuis tané la"
+            android:text="chuis tanné la"
             android:id="@+id/end"
     />
     </LinearLayout>

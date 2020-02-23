@@ -103,7 +103,7 @@ namespace Ski_DooMan.App.Activities
 
             #endregion
 
-            journeyTextView.Text = "On part bientot mon cheum ?";
+            journeyTextView.Text = "Pret a bientot partir Ski-Doo Man ?";
 
             journey = new List<Node>();
             validSelection = MapManager.Instance.GetValideMoveNodes(MapManager.Instance.characterPosition);
@@ -129,7 +129,7 @@ namespace Ski_DooMan.App.Activities
 
         public void UpdateSelection()
         {
-            string journeyMsg = "Ou kon va : ";
+            string journeyMsg = "Destination : ";
 
             for (int i = 0; i < journey.Count; i++)
             {
