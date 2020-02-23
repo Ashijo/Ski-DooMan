@@ -32,24 +32,24 @@ namespace Ski_DooMan.App.Manager
             roads = new List<Road>();
             selectedRoads = new List<Road>();
 
-            var cityA = new Place(1, new Tools.Vector2(0, 0), "Ville A");
-            var cityB = new Place(2, new Tools.Vector2(1, 0), "Ville B");
-            var cityC = new Place(3, new Tools.Vector2(0, 1), "Ville C");
-            var cityD = new Place(4, new Tools.Vector2(1, 1), "Ville D");
+            var cityA = new Place(1, new Tools.Vector2(0, 0), "Sainte Marie de la Miséricorde");
+            var cityB = new Place(2, new Tools.Vector2(1, 0), "Mont-Laurier");
+            var cityC = new Place(3, new Tools.Vector2(0, 1), "Saint-Glinglin");
+            var cityD = new Place(4, new Tools.Vector2(1, 1), "Rivière-du-Castor");
 
             var node5 = new Node(5, new Tools.Vector2(.5f, 0), "Foret A");
             var node6 = new Node(6, new Tools.Vector2(.5f, .5f), "Lac");
             var node7 = new Node(7, new Tools.Vector2(1, .5f), "Foret B");
 
-            var road1 = new Road(cityA, node5, 1, "a road");
-            var road2 = new Road(node5, cityB, 2, "a road");
-            var road3 = new Road(cityA, cityC, 3, "a road");
-            var road4 = new Road(node5, node6, 4, "a road");
-            var road5 = new Road(node6, cityC, 5, "a road");
-            var road6 = new Road(node6, cityB, 6, "a road");
-            var road7 = new Road(node6, cityD, 7, "a road");
-            var road8 = new Road(cityB, node7, 8, "a road");
-            var road9 = new Road(node7, cityD, 9, "a road");
+            var road1 = new Road(cityA, node5, 1, "8e Rang");
+            var road2 = new Road(node5, cityB, 2, "9e Rang");
+            var road3 = new Road(cityA, cityC, 3, "Route du Castor");
+            var road4 = new Road(node5, node6, 4, "Chemin des canards");
+            var road5 = new Road(node6, cityC, 5, "Beau Chemin");
+            var road6 = new Road(node6, cityB, 6, "Chemin du Quai");
+            var road7 = new Road(node6, cityD, 7, "Chemin des patineurs");
+            var road8 = new Road(cityB, node7, 8, "Route des épinettes");
+            var road9 = new Road(node7, cityD, 9, "Route du Nord");
 
             Random rand = new Random();
 
