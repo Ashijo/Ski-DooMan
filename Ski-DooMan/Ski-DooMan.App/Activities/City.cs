@@ -19,27 +19,58 @@ namespace Ski_DooMan.App.Activities
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.city);
-            Button Node6Btn = this.FindViewById<Button>(Resource.Id.node6);
+            Button tavern = this.FindViewById<Button>(Resource.Id.tavern);
+            Button explore = this.FindViewById<Button>(Resource.Id.explore);
+            Button radio = this.FindViewById<Button>(Resource.Id.radio);
+            Button character = this.FindViewById<Button>(Resource.Id.character);
+            Button map = this.FindViewById<Button>(Resource.Id.map);
+            Button end = this.FindViewById<Button>(Resource.Id.end);
 
+            radio.Click += delegate
+            {
+                GoRadio();
+            };
+
+            character.Click += delegate
+            {
+                GoDialog();
+            };
+
+            map.Click += delegate
+            {
+                GoMap();
+            };
+
+            radio.Click += delegate
+            {
+                GoRadio();
+            };
 
         }
 
         void GoRadio()
         {
-
+            StartActivity(typeof(Radio));
         }
 
         void GoDialog()
         {
-
-
+            StartActivity(typeof(Dialog));
         }
 
         void GoMap()
         {
+            StartActivity(typeof(Map));
+        }
+
+        void EndTurn()
+        {
 
         }
 
-       
+        void Explore()
+        {
+            //generate NPC
+        }
     }
 }
