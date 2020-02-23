@@ -175,7 +175,7 @@ namespace Ski_DooMan.App.Manager
 
         public void ResolveQuest(int id)
         {
-            (nodes.Find(node => node.id == id) as Place).isPlace = false;
+            (nodes.Find(node => node.id == id) as Place).ResolveQuest();
         }
 
         public void ResetState()

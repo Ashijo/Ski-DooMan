@@ -9,6 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="130dp"
         android:orientation="horizontal"
+        android:id="@+id/header"
         >
 
         <ImageView
@@ -25,6 +26,21 @@
         />
 
     </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:id="@+id/result"
+    />
+
+     <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="reponse a"
+        android:visibility="gone"
+        android:id="@+id/goBack"
+    />
 
     <Button
         android:layout_width="match_parent"
