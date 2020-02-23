@@ -138,6 +138,10 @@ namespace Ski_DooMan.App.Manager
             return nodes.Find(node => node.id == id) as Place;
         }
 
+        public string GetRoadName(int id) { 
+            return roads.Find(r => r.id == id).name;
+            }
+
         public Place GetAPertinentPlace(int? idUnallowedPlaced = null)
         {
             if(rand == null)

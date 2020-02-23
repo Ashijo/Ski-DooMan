@@ -69,7 +69,7 @@ namespace Ski_DooMan.App.Manager
             var asw = "";
             if (meteoCall < 4)
             {
-                asw = string.Format(meteo[meteoCall], MapManager.Instance.trapperdRoads[meteoCall]);
+                asw = string.Format(meteo[meteoCall], MapManager.Instance.GetRoadName(MapManager.Instance.trapperdRoads[meteoCall]));
             }
             meteoCall++;
             return asw;
