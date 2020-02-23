@@ -18,8 +18,8 @@ namespace Ski_DooMan.App.Data.Radio
         {
             return new List<string>()
             {
-                "Pour que tu m’aimes encore de Céline Dion ",
-                "L’homme 7 UP des Respectables "
+                "Vous écoutez : Pour que tu m’aimes encore de Céline Dion ",
+                "Vous écoutez : L’homme 7 UP des Respectables "
             };
 
         }
@@ -28,8 +28,8 @@ namespace Ski_DooMan.App.Data.Radio
         {
             return new List<string>()
             {
-                "Aux portes du matin de Richard Séguin ",
-                "Maudit bonheur de Michel Rivard "
+                "Vous écoutez : Aux portes du matin de Richard Séguin ",
+                "Vous écoutez : Maudit bonheur de Michel Rivard "
             };
 
         }
@@ -38,8 +38,8 @@ namespace Ski_DooMan.App.Data.Radio
         {
             return new List<string>()
             {
-                "En 1990 de Jean Leloup",
-                "Alegria du Cirque du Soleil "
+                "Vous écoutez : En 1990 de Jean Leloup",
+                "Vous écoutez : Alegria du Cirque du Soleil "
             };
 
         }
@@ -48,8 +48,8 @@ namespace Ski_DooMan.App.Data.Radio
         {
             return new List<string>()
             {
-                "Le plus fort, c’est mon père de Lynda Lemay",
-                "Seigneur de Kevin Parent"
+                "Vous écoutez : Le plus fort, c’est mon père de Lynda Lemay",
+                "Vous écoutez : Seigneur de Kevin Parent"
             };
 
         }
@@ -58,8 +58,8 @@ namespace Ski_DooMan.App.Data.Radio
         {
             return new List<string>()
             {
-                "Calvaire de La chicane",
-                "Sèche tes pleurs de Daniel Bélanger "
+                "Vous écoutez : Calvaire de La chicane",
+                "Vous écoutez : Sèche tes pleurs de Daniel Bélanger "
             };
 
         }
@@ -68,8 +68,8 @@ namespace Ski_DooMan.App.Data.Radio
         {
             return new List<string>()
             {
-                "Tous les cris, les SOS de Marie-Denise Pelletier ",
-                "La rue Principale des Colocs "
+                "Vous écoutez : Tous les cris, les SOS de Marie-Denise Pelletier ",
+                "Vous écoutez : La rue Principale des Colocs "
             };
 
         }
