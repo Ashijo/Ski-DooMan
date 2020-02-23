@@ -24,7 +24,7 @@ namespace Ski_DooMan.App.Data.Radio
                 { "herve", " Hervé à besoin d'aide à {0} " },
                 { "herve-deliver", "Hervé est au village de {0}. “Je sais qui fait pas beau dehors, mais j’veux pas que ma femme passe notre anniversaire de mariage toute seule. S.v.p. Ski-Doo Man, va donc prier sur la tombe à ma femme Caire.” Lieu : {1} " },
 
-                { "joanne", " Joanne à besoin d'aide à {0} " },
+                { "joanne", " [Joanne] \"Quelqu’un de libre? Je commence à perdre le contrôle de la foule rassemblé à la Polyvalente. Besoin de back-up dès que possible!\" Lieu : {0} " },
                 { "joanne-deliver", "Joanne est au village de de {0}. “ J'ai besoin de quelqu’un de courageux pour nous aider à forcer la porte d’un hangar pour récupérer du gaz pour la génératrice. On s’en fout que ce soit pas légal.” Lieu : {1} " },
 
                 { "bertha", " La belle Bertha à besoin d'aide à {0} " },
