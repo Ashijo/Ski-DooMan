@@ -19,7 +19,7 @@ namespace Ski_DooMan.App.Activities
     {
         List<Node> validSelection;
         List<Node> journey;
-        
+
 
         TextView journeyTextView;
         protected override void OnCreate(Bundle savedInstanceState)
@@ -38,6 +38,13 @@ namespace Ski_DooMan.App.Activities
 
             Button ResetSequenceBtn = this.FindViewById<Button>(Resource.Id.resetSequence);
             Button travelBtn = this.FindViewById<Button>(Resource.Id.travel);
+            Button travelNoRadioBtn = this.FindViewById<Button>(Resource.Id.travelNoRadio);
+
+            travelNoRadioBtn.Click += delegate
+            {
+                TravelNoRadio();
+            };
+
             journeyTextView = this.FindViewById<TextView>(Resource.Id.sequenceString);
 
             #region clickset
@@ -102,9 +109,17 @@ namespace Ski_DooMan.App.Activities
             validSelection = MapManager.Instance.GetValideMoveNodes(MapManager.Instance.characterPosition);
         }
 
+        public void TravelNoRadio()
+        {
+            if (journey.Any())
+            {
+                StartActivity(typeof(City));
+            }
+        }
+
         public void Travel()
         {
-            if (journey.Last().isPlace)
+            if (journey.Any() && journey.Last().isPlace)
             {
                 MapManager.Instance.characterPosition = journey.Last();
                 StartActivity(typeof(Radio));

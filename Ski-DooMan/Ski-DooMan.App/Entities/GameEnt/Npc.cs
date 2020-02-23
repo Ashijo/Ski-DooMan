@@ -38,7 +38,7 @@ namespace Ski_DooMan.App.Entities.GameEnt
 
         }
 
-        private Quest definedQuest;
+        public Quest definedQuest;
 
         public int id { get; set; }
         public string name { get; set; }

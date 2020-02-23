@@ -37,3 +37,4 @@ string;obj\Debug\90\res\values\strings.xml
 style;obj\Debug\90\res\values\styles.xml
 TextView;obj\Debug\90\res\layout\dialog.xml
 TextView;obj\Debug\90\res\layout\map.xml
+TextView;obj\Debug\90\res\layout\radio.xml

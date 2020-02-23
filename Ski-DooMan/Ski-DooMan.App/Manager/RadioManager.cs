@@ -22,7 +22,7 @@ namespace Ski_DooMan.App.Manager
     {
 
         List<string> meteo;
-        Dictionary<string, string> npc;
+        Dictionary<string, string> npcs;
         Dictionary<Value, List<string>> musics;
 
 
@@ -36,7 +36,7 @@ namespace Ski_DooMan.App.Manager
         {
             musics = Seeder.GetMusics();
             meteo = Meteo.GetData();
-            npc = NPC.GetData();
+            npcs = NPC.GetData();
         }
 
         public static RadioManager Instance
@@ -75,8 +75,22 @@ namespace Ski_DooMan.App.Manager
 
         public string GetANpc()
         {
+            var npc = GameManager.Instance.GetAnNPC();
+            var where = MapManager.Instance.GetAPertinentPlace();
+            var deliver = MapManager.Instance.GetAPertinentPlace(where.id);
+            MapManager.Instance.SetNpc(npc, where);
+            var isDeliver = npc.GetMyQuest().questType;
 
-            return "";
+            var questMsg = npcs[npc.name + (isDeliver ? "-deliver" : "")];
+
+            if (isDeliver)
+            {
+                questMsg = string.Format(questMsg, where.name, deliver.name);
+            }else {     
+                questMsg = string.Format(questMsg, where.name);
+            }
+
+            return questMsg;
         }
     }
 
