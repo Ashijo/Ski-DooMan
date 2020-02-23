@@ -67,6 +67,7 @@
     <Compile Include="Activities\StartSettings.cs" />
     <Compile Include="Data\Radio\Meteo.cs" />
     <Compile Include="Data\Radio\Music.cs" />
+    <Compile Include="Data\Radio\NPC.cs" />
     <Compile Include="Entities\GameEnt\Npc.cs" />
     <Compile Include="Entities\GameEnt\Player.cs" />
     <Compile Include="Entities\GameEnt\Quest.cs" />
@@ -80,6 +81,7 @@
     <Compile Include="Manager\RadioManager.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tools\Const.cs" />
     <Compile Include="Tools\Seeder.cs" />
     <Compile Include="Tools\Value.cs" />
     <Compile Include="Tools\Vector2.cs" />

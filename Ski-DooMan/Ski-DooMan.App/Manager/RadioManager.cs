@@ -13,19 +13,27 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Plugin.SimpleAudioPlayer;
+using Ski_DooMan.App.Data.Radio;
+using Ski_DooMan.App.Tools;
 
 namespace Ski_DooMan.App.Manager
 {
     public class RadioManager
     {
-        
 
+        List<string> meteo;
+        Dictionary<string, string> npc;
+        Dictionary<Value, List<string>> musics;
 
         #region instance
         private static RadioManager instance = null;
 
         private RadioManager()
-        { }
+        {
+            musics = Seeder.GetMusics();
+            meteo = Meteo.GetData();
+            npc = NPC.GetData();
+        }
 
         public static RadioManager Instance
         {
@@ -41,7 +49,21 @@ namespace Ski_DooMan.App.Manager
 
         #endregion
 
-     
+        public string GetAMusic()
+        {
+            Array values = Enum.GetValues(typeof(Value));
+            Random random = new Random();
+            Value randomvalue = (Value)values.GetValue(random.Next(values.Length));
+
+            return musics[randomvalue][random.Next(musics[randomvalue].Count)];
+        }
+
+        public string GetMeteo()
+        {
+            
+            return "";
+        }
+
     }
-   
+
 }
