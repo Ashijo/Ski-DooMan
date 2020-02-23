@@ -25,6 +25,8 @@ namespace Ski_DooMan.App.Manager
         Dictionary<string, string> npc;
         Dictionary<Value, List<string>> musics;
 
+
+
         int meteoCall = 0;
 
         #region instance

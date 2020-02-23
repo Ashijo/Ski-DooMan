@@ -78,6 +78,7 @@
     <Compile Include="Entities\MapEnt\Road.cs" />
     <Compile Include="Entities\MapEnt\RoadEvent.cs" />
     <Compile Include="MainActivity.cs" />
+    <Compile Include="Manager\GameManager.cs" />
     <Compile Include="Manager\MapManager.cs" />
     <Compile Include="Manager\RadioManager.cs" />
     <Compile Include="Resources\Resource.designer.cs" />

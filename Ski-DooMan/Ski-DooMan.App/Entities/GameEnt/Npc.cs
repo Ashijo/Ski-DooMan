@@ -14,11 +14,37 @@ namespace Ski_DooMan.App.Entities.GameEnt
 {
     public class Npc
     {
+        public Npc(int id, string name, string img, Quest deverly, Quest narative)
+        {
+            this.id = id;
+            this.name = name;
+            this.img = img;
+            this.deverly = deverly;
+            this.narative = narative;
+        }
+
+        public Quest GetMyQuest()
+        {
+            if(definedQuest == null) {
+                Random rand = new Random();
+
+                if (rand.Next(0, 2) == 0)
+                    definedQuest = deverly;
+                else
+                    definedQuest = narative;
+            }
+
+            return definedQuest;
+
+        }
+
+        private Quest definedQuest;
+
         public int id { get; set; }
         public string name { get; set; }
         public string img { get; set; }
 
-        public Quest deverly { get; set;}
+        public Quest deverly { get; set; }
         public Quest narative { get; set; }
 
     }

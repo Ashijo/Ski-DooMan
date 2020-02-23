@@ -10,6 +10,8 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Ski_DooMan.App.Entities.MapEnt;
+using Ski_DooMan.App.Entities.GameEnt;
+using Ski_DooMan.App.Tools;
 
 namespace Ski_DooMan.App.Manager
 {
@@ -95,6 +97,7 @@ namespace Ski_DooMan.App.Manager
                 roads[rand2].id,
                 roads[rand3].id
                 };
+
 
             characterPosition = cityD;
         }

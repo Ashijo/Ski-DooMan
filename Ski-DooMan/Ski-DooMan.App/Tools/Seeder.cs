@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 
 using Ski_DooMan.App.Data.Radio;
+using Ski_DooMan.App.Entities.GameEnt;
 
 namespace Ski_DooMan.App.Tools
 {
@@ -37,6 +38,28 @@ namespace Ski_DooMan.App.Tools
             }
 
             return dico;
+        }
+
+        public static List<Npc> GetNpcs()
+        {
+
+            return new List<Npc>
+            {
+                new Npc(
+                        1, "mona", "green", 
+                            new Quest (false, "Deverly quete description", 
+                                new QuestAnswer(Value.Courage, "Grimpe dans l'arbre", 0, "En utilisant l'echele tu attrape le chien, ", "tout est bo"), 
+                                new QuestAnswer(Value.Courage, "Grimpe dans l'arbre", 0, "En utilisant l'echele tu attrape le chien, ", "tout est bo"), 
+                                new QuestAnswer(Value.Courage, "Grimpe dans l'arbre", 0, "En utilisant l'echele tu attrape le chien, ", "tout est bo")
+                                ),
+                             new Quest (true, "tu arrive a l'hopital pis faut sauvez le chien",
+                                new QuestAnswer(Value.Courage, "Grimpe dans l'arbre", 0, "En utilisant l'echele tu attrape le chien, ", "tout est bo"),
+                                new QuestAnswer(Value.Courage, "Grimpe dans l'arbre", 0, "En utilisant l'echele tu attrape le chien, ", "tout est bo"),
+                                new QuestAnswer(Value.Courage, "Grimpe dans l'arbre", 0, "En utilisant l'echele tu attrape le chien, ", "tout est bo")
+                                )
+                    )
+            };
+
         }
     }
 }

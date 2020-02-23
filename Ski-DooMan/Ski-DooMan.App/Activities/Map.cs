@@ -19,6 +19,8 @@ namespace Ski_DooMan.App.Activities
     {
         List<Node> validSelection;
         List<Node> journey;
+        
+
         TextView journeyTextView;
         protected override void OnCreate(Bundle savedInstanceState)
         {
