@@ -15,8 +15,10 @@ namespace Ski_DooMan.App.Entities.MapEnt
 {
     public class Place : Node
     {
+        public bool hasAQuest;
         public Place(int id, Vector2 position, string name) : base(id, position, name, true, 25)
         {
+            hasAQuest = false;
         }
     }
 }

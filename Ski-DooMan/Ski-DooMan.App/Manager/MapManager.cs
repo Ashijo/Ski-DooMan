@@ -81,9 +81,32 @@ namespace Ski_DooMan.App.Manager
                 return instance;
             }
         }
-
         #endregion
 
+        public Place GetPlace(int id)
+        {
+            return nodes.Find(node => node.id == id) as Place;
+        }
+
+        public int[] GetQuestPlaceIds()
+        {
+            return nodes
+                .Where(node => node.isPlace)
+                .Cast<Place>()
+                .Where(place => place.hasAQuest)
+                .Select(place => place.id)
+                .ToArray();
+        }
+
+        public void AddAQuest(int id)
+        {
+            (nodes.Find(node => node.id == id) as Place).isPlace = true;
+        }
+
+        public void ResolveQuest(int id)
+        {
+            (nodes.Find(node => node.id == id) as Place).isPlace = false;
+        }
 
         public void ResetState()
         {
@@ -91,6 +114,12 @@ namespace Ski_DooMan.App.Manager
             {
                 road.ResetState();
             }
+
+            foreach (var place in nodes.Where(node => node.isPlace))
+            {
+                (place as Place).hasAQuest = false;
+            }
+
             characterPosition = nodes.Find(node => node.id == 4);
         }
 

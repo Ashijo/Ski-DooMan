@@ -11,6 +11,8 @@
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
+    <activity android:label="City" android:name="crc64d401ac7330fc9f59.City" />
+    <activity android:label="Dialog" android:name="crc64d401ac7330fc9f59.Dialog" />
     <activity android:label="Map" android:name="crc64d401ac7330fc9f59.Map" />
     <activity android:label="Radio" android:name="crc64d401ac7330fc9f59.Radio" />
     <activity android:label="StartSettings" android:name="crc64d401ac7330fc9f59.StartSettings" />

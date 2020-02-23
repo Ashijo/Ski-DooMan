@@ -3,7 +3,7 @@
   <PropertyGroup>
     <SelectedDevice>LGE LM-Q910</SelectedDevice>
     <DefaultDevice>nddevice_10p</DefaultDevice>
-    <AndroidDesignerPreferredTheme>AppTheme</AndroidDesignerPreferredTheme>
+    <AndroidDesignerPreferredTheme>AppTheme.NoActionBar</AndroidDesignerPreferredTheme>
     <AndroidDesignerPreferredDevice>pixel_3a_xl</AndroidDesignerPreferredDevice>
   </PropertyGroup>
 </Project>

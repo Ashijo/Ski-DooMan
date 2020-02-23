@@ -1,6 +1,12 @@
 Ski_DooMan.App.MainActivity, Ski-DooMan.App;crc64d74d6d849607a470.MainActivity
 Ski_DooMan.App.MainActivity;crc64d74d6d849607a470.MainActivity
 ski_dooman.app.MainActivity;crc64d74d6d849607a470.MainActivity
+Ski_DooMan.App.Activities.City, Ski-DooMan.App;crc64d401ac7330fc9f59.City
+Ski_DooMan.App.Activities.City;crc64d401ac7330fc9f59.City
+ski_dooman.app.activities.City;crc64d401ac7330fc9f59.City
+Ski_DooMan.App.Activities.Dialog, Ski-DooMan.App;crc64d401ac7330fc9f59.Dialog
+Ski_DooMan.App.Activities.Dialog;crc64d401ac7330fc9f59.Dialog
+ski_dooman.app.activities.Dialog;crc64d401ac7330fc9f59.Dialog
 Ski_DooMan.App.Activities.Map, Ski-DooMan.App;crc64d401ac7330fc9f59.Map
 Ski_DooMan.App.Activities.Map;crc64d401ac7330fc9f59.Map
 ski_dooman.app.activities.Map;crc64d401ac7330fc9f59.Map

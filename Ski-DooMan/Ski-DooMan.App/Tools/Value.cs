@@ -12,7 +12,7 @@ using Android.Widget;
 
 namespace Ski_DooMan.App.Tools
 {
-    enum Value
+    public enum Value
     {
         Justice,
         Courage,

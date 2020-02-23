@@ -36,7 +36,9 @@ namespace Ski_DooMan.App.Activities
 
             Button ResetSequenceBtn = this.FindViewById<Button>(Resource.Id.resetSequence);
             Button travelBtn = this.FindViewById<Button>(Resource.Id.travel);
+            journeyTextView = this.FindViewById<TextView>(Resource.Id.sequenceString);
 
+            #region clickset
             travelBtn.Click += delegate
             {
                 Travel();
@@ -47,7 +49,6 @@ namespace Ski_DooMan.App.Activities
                 ResetSequence();
             };
 
-            journeyTextView = this.FindViewById<TextView>(Resource.Id.sequenceString);
 
             cityABtn.Click += delegate
             {
@@ -90,6 +91,8 @@ namespace Ski_DooMan.App.Activities
                 Node7Click();
                 UpdateSelection();
             };
+
+            #endregion
 
             journeyTextView.Text = "On part bientot mon cheum ?";
 

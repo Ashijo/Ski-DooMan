@@ -18,11 +18,8 @@ namespace Ski_DooMan.App.Manager
 {
     public class RadioManager
     {
-        protected MediaPlayer player;
+        
 
-        string[] tunes = new string[] { 
-            "Bohemian Rhapsody de Queen"
-            };
 
         #region instance
         private static RadioManager instance = null;

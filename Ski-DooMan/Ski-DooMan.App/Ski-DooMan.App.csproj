@@ -65,6 +65,8 @@
     <Compile Include="Activities\Map.cs" />
     <Compile Include="Activities\Radio.cs" />
     <Compile Include="Activities\StartSettings.cs" />
+    <Compile Include="Data\Radio\Meteo.cs" />
+    <Compile Include="Data\Radio\Music.cs" />
     <Compile Include="Entities\GameEnt\Npc.cs" />
     <Compile Include="Entities\GameEnt\Player.cs" />
     <Compile Include="Entities\GameEnt\Quest.cs" />
@@ -86,6 +88,8 @@
     <None Include="Resources\AboutResources.txt" />
     <None Include="Properties\AndroidManifest.xml" />
     <None Include="Assets\AboutAssets.txt" />
+    <AndroidResource Include="Resources\font\PoppinsBold.ttf" />
+    <AndroidResource Include="Resources\font\PoppinsBoldItalic.ttf" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\activity_main.xml">
@@ -150,9 +154,7 @@
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
     Other similar extension points exist, see Microsoft.Common.targets.
