@@ -44,9 +44,11 @@ namespace Ski_DooMan.App.Manager
             usedNpc = new List<Npc>();
         }
 
+        Random random;
         public Npc GetAnNPC()
         {
-            Random random = new Random();
+            if(random == null)
+                random = new Random();
 
             var i = random.Next(npcs.Count - usedNpc.Count);
             var choosenOne = npcs.Where(np => !usedNpc.Select(use => use.id).Contains(np.id)).ToArray()[i];

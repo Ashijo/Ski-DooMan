@@ -14,6 +14,8 @@ namespace Ski_DooMan.App.Entities.GameEnt
 {
     public class Npc
     {
+        Random rand;
+
         public Npc(int id, string name, string img, Quest deverly, Quest narative)
         {
             this.id = id;
@@ -26,7 +28,8 @@ namespace Ski_DooMan.App.Entities.GameEnt
         public Quest GetMyQuest()
         {
             if(definedQuest == null) {
-                Random rand = new Random();
+                if(rand == null)
+                    rand = new Random();
 
                 if (rand.Next(0, 2) == 0)
                     definedQuest = deverly;

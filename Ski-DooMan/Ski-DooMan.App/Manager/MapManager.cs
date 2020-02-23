@@ -17,6 +17,7 @@ namespace Ski_DooMan.App.Manager
 {
     public class MapManager
     {
+        Random rand;
         List<Node> nodes;
         List<Road> roads;
         public Node characterPosition;
@@ -51,7 +52,8 @@ namespace Ski_DooMan.App.Manager
             var road8 = new Road(cityB, node7, 8, "a road");
             var road9 = new Road(node7, cityD, 9, "a road");
 
-            Random rand = new Random();
+            if(rand == null)
+                rand = new Random();
 
             int rand1 = rand.Next(9);
 
@@ -136,7 +138,8 @@ namespace Ski_DooMan.App.Manager
 
         public Place GetAPertinentPlace(int? idUnallowedPlaced = null)
         {
-            Random rand = new Random();
+            if(rand == null)
+                rand = new Random();
             var logicPlace = nodes.Where(node => node.isPlace && node.id != characterPosition.id).Cast<Place>().ToList();
 
             if (idUnallowedPlaced != null)
