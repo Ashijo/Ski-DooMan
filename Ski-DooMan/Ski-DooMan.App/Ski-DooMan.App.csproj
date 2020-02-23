@@ -65,6 +65,7 @@
     <Compile Include="Activities\Map.cs" />
     <Compile Include="Activities\Radio.cs" />
     <Compile Include="Activities\StartSettings.cs" />
+    <Compile Include="Data\Game\Quest.cs" />
     <Compile Include="Data\Radio\Meteo.cs" />
     <Compile Include="Data\Radio\Music.cs" />
     <Compile Include="Data\Radio\NPC.cs" />
