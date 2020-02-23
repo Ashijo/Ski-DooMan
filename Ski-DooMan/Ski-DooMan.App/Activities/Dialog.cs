@@ -18,6 +18,7 @@ namespace Ski_DooMan.App.Activities
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+            SetContentView(Resource.Layout.dialog);
 
             // Create your application here
         }
