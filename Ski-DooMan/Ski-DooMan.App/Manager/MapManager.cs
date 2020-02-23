@@ -40,9 +40,9 @@ namespace Ski_DooMan.App.Manager
             var cityC = new Place(3, new Tools.Vector2(0, 1), "Saint-Glinglin");
             var cityD = new Place(4, new Tools.Vector2(1, 1), "Rivière-du-Castor");
 
-            var node5 = new Node(5, new Tools.Vector2(.5f, 0), "Foret A");
-            var node6 = new Node(6, new Tools.Vector2(.5f, .5f), "Lac");
-            var node7 = new Node(7, new Tools.Vector2(1, .5f), "Foret B");
+            var node5 = new Node(5, new Tools.Vector2(.5f, 0), "Foret Boréal");
+            var node6 = new Node(6, new Tools.Vector2(.5f, .5f), "Lac Barbau");
+            var node7 = new Node(7, new Tools.Vector2(1, .5f), "Foret Champlain");
 
             var road1 = new Road(cityA, node5, 1, "8e Rang");
             var road2 = new Road(node5, cityB, 2, "9e Rang");
