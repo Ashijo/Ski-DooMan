@@ -19,8 +19,27 @@ namespace Ski_DooMan.App.Activities
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.city);
+            Button Node6Btn = this.FindViewById<Button>(Resource.Id.node6);
 
-            // Create your application here
+
         }
+
+        void GoRadio()
+        {
+
+        }
+
+        void GoDialog()
+        {
+
+
+        }
+
+        void GoMap()
+        {
+
+        }
+
+       
     }
 }
