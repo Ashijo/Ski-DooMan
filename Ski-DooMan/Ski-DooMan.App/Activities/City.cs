@@ -9,6 +9,8 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Ski_DooMan.App.Entities.MapEnt;
+using Ski_DooMan.App.Manager;
 
 namespace Ski_DooMan.App.Activities
 {
@@ -33,7 +35,10 @@ namespace Ski_DooMan.App.Activities
 
             character.Click += delegate
             {
-                GoDialog();
+                if (((Place)MapManager.Instance.characterPosition).hasAQuest)
+                {
+                    GoDialog();
+                }
             };
 
             map.Click += delegate
