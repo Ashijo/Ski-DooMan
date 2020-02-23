@@ -25,6 +25,8 @@ namespace Ski_DooMan.App.Manager
         Dictionary<string, string> npc;
         Dictionary<Value, List<string>> musics;
 
+        int meteoCall = 0;
+
         #region instance
         private static RadioManager instance = null;
 
@@ -60,10 +62,20 @@ namespace Ski_DooMan.App.Manager
 
         public string GetMeteo()
         {
-            
-            return "";
+            var asw = "";
+            if (meteoCall < 4)
+            {
+                asw = string.Format(meteo[meteoCall], MapManager.Instance.trapperdRoads[meteoCall]);
+            }
+            meteoCall++;
+            return asw;
         }
 
+        public string GetANpc()
+        {
+
+            return "";
+        }
     }
 
 }

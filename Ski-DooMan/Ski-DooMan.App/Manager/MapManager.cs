@@ -18,6 +18,8 @@ namespace Ski_DooMan.App.Manager
         List<Node> nodes;
         List<Road> roads;
         public Node characterPosition;
+        public int[] trapperdRoads;
+        public List<Road> selectedRoads;
 
         #region instance
         private static MapManager instance = null;
@@ -26,6 +28,7 @@ namespace Ski_DooMan.App.Manager
         {
             nodes = new List<Node>();
             roads = new List<Road>();
+            selectedRoads = new List<Road>();
 
             var cityA = new Place(1, new Tools.Vector2(0, 0), "Ville A");
             var cityB = new Place(2, new Tools.Vector2(1, 0), "Ville B");
@@ -36,17 +39,33 @@ namespace Ski_DooMan.App.Manager
             var node6 = new Node(6, new Tools.Vector2(.5f, .5f), "Lac");
             var node7 = new Node(7, new Tools.Vector2(1, .5f), "Foret B");
 
-            var road1 = new Road(cityA, node5);
-            var road2 = new Road(node5, cityB);
-            var road3 = new Road(cityA, cityC);
+            var road1 = new Road(cityA, node5, 1, "a road");
+            var road2 = new Road(node5, cityB, 2, "a road");
+            var road3 = new Road(cityA, cityC, 3, "a road");
+            var road4 = new Road(node5, node6, 4, "a road");
+            var road5 = new Road(node6, cityC, 5, "a road");
+            var road6 = new Road(node6, cityB, 6, "a road");
+            var road7 = new Road(node6, cityD, 7, "a road");
+            var road8 = new Road(cityB, node7, 8, "a road");
+            var road9 = new Road(node7, cityD, 9, "a road");
 
-            var road4 = new Road(node5, node6);
-            var road5 = new Road(node6, cityC);
-            var road6 = new Road(node6, cityB);
-            var road7 = new Road(node6, cityD);
+            Random rand = new Random();
 
-            var road8 = new Road(cityB, node7);
-            var road9 = new Road(node7, cityD);
+            int rand1 = rand.Next(9);
+
+
+            int rand2 = rand.Next(9);
+            while (rand2 == rand1)
+            {
+                rand2 = rand.Next(9);
+            }
+
+            int rand3 = rand.Next(9);
+            while (rand3 == rand1 || rand3 == rand2)
+            {
+                rand3 = rand.Next(9);
+            }
+
 
             nodes.Add(cityA);
             nodes.Add(cityB);
@@ -67,6 +86,16 @@ namespace Ski_DooMan.App.Manager
             roads.Add(road8);
             roads.Add(road9);
 
+            roads[rand1].roadEvent = RoadEvent.Something;
+            roads[rand2].roadEvent = RoadEvent.Something;
+            roads[rand3].roadEvent = RoadEvent.Something;
+
+            trapperdRoads = new int[] {
+                roads[rand1].id,
+                roads[rand2].id,
+                roads[rand3].id
+                };
+
             characterPosition = cityD;
         }
 
@@ -81,7 +110,21 @@ namespace Ski_DooMan.App.Manager
                 return instance;
             }
         }
+
         #endregion
+
+        public void AddTravelPart(int nodeA, int nodeB)
+        {
+            selectedRoads
+                .Add(roads
+                    .Find(node => (node.aNode.id == nodeA || node.aNode.id == nodeB)
+                        && (node.bNode.id == nodeA || node.bNode.id == nodeB)));
+        }
+
+        public void ResetTravelSelect()
+        {
+            selectedRoads = new List<Road>();
+        }
 
         public Place GetPlace(int id)
         {
