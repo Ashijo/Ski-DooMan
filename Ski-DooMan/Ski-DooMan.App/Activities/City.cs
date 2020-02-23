@@ -17,6 +17,8 @@ namespace Ski_DooMan.App.Activities
     [Activity(Label = "City")]
     public class City : Activity
     {
+        ImageView img;
+        TextView msg;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -28,6 +30,14 @@ namespace Ski_DooMan.App.Activities
             Button map = this.FindViewById<Button>(Resource.Id.map);
             Button end = this.FindViewById<Button>(Resource.Id.end);
 
+            img = this.FindViewById<ImageView>(Resource.Id.img);
+            msg = this.FindViewById<TextView>(Resource.Id.msg);
+
+            explore.Click += delegate
+            {
+                Explore();
+            };
+
             radio.Click += delegate
             {
                 GoRadio();
@@ -35,7 +45,7 @@ namespace Ski_DooMan.App.Activities
 
             character.Click += delegate
             {
-                if (((Place)MapManager.Instance.characterPosition).hasAQuest)
+                if (((Place)MapManager.Instance.characterPosition).hasAQuest && !((Place)MapManager.Instance.characterPosition).npc.definedQuest.questType)
                 {
                     GoDialog();
                 }
@@ -76,7 +86,9 @@ namespace Ski_DooMan.App.Activities
 
         void Explore()
         {
-            //generate NPC
+            img.Visibility = ViewStates.Gone;
+            msg.Visibility = ViewStates.Visible;
+            msg.Text = RadioManager.Instance.GetANpc();
         }
     }
 }

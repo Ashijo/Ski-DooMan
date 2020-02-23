@@ -53,10 +53,12 @@ namespace Ski_DooMan.App.Manager
 
         #endregion
 
+        Random random;
         public string GetAMusic()
         {
             Array values = Enum.GetValues(typeof(Value));
-            Random random = new Random();
+            if(random == null)
+                random = new Random();
             Value randomvalue = (Value)values.GetValue(random.Next(values.Length));
 
             return musics[randomvalue][random.Next(musics[randomvalue].Count)];
