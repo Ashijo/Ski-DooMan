@@ -21,5 +21,5 @@ conséquences qui pourraient en résulter. S’ils parviennent à survivre aux 8
 
 Un jeu de Catherine Robinson, Eve Gaboury, Margot Blanchard, Jean-François Chrétien, Gaëtan Pasquet, Pierre Poissant-Marquis, Simons Jutras
 
-
+made with Xamarin
 
